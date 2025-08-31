@@ -4,6 +4,23 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style2.css">
   <title>My Hobbies</title>
+  <style>
+    .back-btn {
+      display: inline-block;
+      margin: 20px 0;
+      padding: 10px 20px;
+      background-color: #f8c8dc;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .back-btn:hover {
+      background-color: #f8c8dc;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -15,6 +32,9 @@
       <li>✈️ Traveling</li>
       <li>🧘‍♀️ Meditation</li>
     </ul>
+
+    <!-- Back Button -->
+    <button class="back-btn" onclick="history.back()">⬅ Back</button>
   </div>
 </body>
 </html>
