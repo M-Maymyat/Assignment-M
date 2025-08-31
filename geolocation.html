@@ -18,6 +18,10 @@
       color: white;
       border: none;
       border-radius: 8px;
+      margin: 10px;
+    }
+    button:hover {
+      background-color: #2c3496;
     }
     p {
       font-size: 20px;
@@ -30,6 +34,9 @@
   <h1>Geolocation Distance Checker</h1>
   <button onclick="getLocation()">Where am I?</button>
   <p id="output">Click the button to find your distance from Kasem Bundit University.</p>
+  
+  <!-- Back button -->
+  <button onclick="goBack()">⬅ Back</button>
 
   <script>
     // Coordinates of Kasem Bundit University
@@ -86,6 +93,11 @@
           break;
       }
       document.getElementById("output").innerText = message;
+    }
+
+    // Back button function
+    function goBack() {
+      window.history.back();
     }
   </script>
 
